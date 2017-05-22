@@ -14,6 +14,7 @@ import 'common/stylus/base.styl'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
+  mode: 'history',
   routes: Router.routes
 })
 // To next hook until all done
