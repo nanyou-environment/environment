@@ -1,7 +1,7 @@
-import NewsContent from 'components/NewsContent'
-import NewsList from 'components/NewsList'
-import TopicList from 'components/TopicList'
-import SectionList from 'components/SectionList'
+const NewsList = r => require.ensure([], () => r(require('components/NewsList')), 'newslist')
+const TopicList = r => require.ensure([], () => r(require('components/TopicList')), 'topiclist')
+const NewsContent = r => require.ensure([], () => r(require('components/NewsContent')), 'newscontent')
+const SectionList = r => require.ensure([], () => r(require('components/SectionList')), 'sectionlist')
 
 export default {
   routes: [
